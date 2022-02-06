@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.palladiosimulator</groupId>
+		<artifactId>eclipse-parent-product</artifactId>
+		<version>0.7.5</version>
+	</parent>
+	<groupId>org.palladiosimulator.dataflow.confidentiality.dse.pcm.product</groupId>
+	<artifactId>parent</artifactId>	
+	<version>5.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>features</module>
+		<module>products</module>
+	</modules>
+
+	<profiles>
+
+		<profile>
+			<id>nightly</id>
+			<activation>
+				<property>
+					<name>!release</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>pcm-nightly</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/</url>
+				</repository>
+				<repository>
+					<id>fluidtrust</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/</url>
+				</repository>
+				<repository>
+					<id>dse-fluid</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/palladio-addons-dataflowconfidentiality-dse/nightly/</url>
+				</repository>
+				<repository>
+					<id>eclipse-2021-12</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2021-12/</url>
+				</repository>
+			</repositories>
+		</profile>
+
+		<profile>
+			<id>release</id>
+			<activation>
+				<property>
+					<name>release</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>pcm-latest</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/palladio-build-updatesite/releases/latest</url>
+				</repository>
+				<repository>
+					<id>fluidtrust</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/releases/latest/</url>
+				</repository>
+				<repository>
+					<id>eclipse-2021-09</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2021-12/</url>
+				</repository>
+			</repositories>
+		</profile>
+
+	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-packaging-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<useDefaultExcludes>false</useDefaultExcludes>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+</project>

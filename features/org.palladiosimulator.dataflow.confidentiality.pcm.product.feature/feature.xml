@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product.feature"
+      label="Palladio Data Flow Confidentiality Product Feature"
+      version="5.1.0.qualifier"
+      provider-name="palladiosimulator.org"
+      plugin="org.palladiosimulator.branding"
+      license-feature="org.palladiosimulator.license.epl2"
+      license-feature-version="1.0.0">
+
+   <description url="http://www.palladiosimulator.org">
+      Feature grouping required features for Data Flow Confidentiality
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.palladiosimulator.editors.commons.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.editors.sirius.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.editors.tree.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.edp2.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.edp2.ui.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.pcm.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.protocom.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.solver.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.reliability.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.recorderframework.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.analyzer.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.monitorrepository.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.simulizar.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.measurementsui.feature" match="equivalent"/>
+      <import feature="org.palladiosimulator.branding.feature"/>
+      <import feature="de.uka.ipd.sdq.dsexplore.feature"/>
+      <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
+      <import feature="org.eclipse.platform" version="4.22.0" match="compatible"/>
+      <import plugin="org.eclipse.sdk" version="4.22.0" match="compatible"/>
+      <import feature="org.eclipse.ocl.unified.ui" version="1.16.0" match="compatible"/>
+   </requires>
+
+</feature>
