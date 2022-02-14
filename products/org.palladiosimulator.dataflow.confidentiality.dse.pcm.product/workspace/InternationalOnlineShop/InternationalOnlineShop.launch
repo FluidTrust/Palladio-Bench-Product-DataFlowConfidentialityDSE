@@ -89,7 +89,7 @@
     <stringAttribute key="costFile" value=""/>
     <stringAttribute key="crossover rate" value="0.5"/>
     <intAttribute key="de.uka.ipd.sdq.workflowengine.debuglevel" value="2"/>
-    <stringAttribute key="designDecisionFile" value="New_configuration.designdecision"/>
+    <stringAttribute key="designDecisionFile" value="platform:/resource/InternationalOnlineShop/My.designdecision"/>
     <booleanAttribute key="designDecisionsOnly" value="false"/>
     <stringAttribute key="eventMiddlewareRepositoryFile" value="pathmap://PCM_MODELS/default_event_middleware.repository"/>
     <stringAttribute key="experimentRun" value="MyRun"/>
@@ -118,7 +118,7 @@
     <booleanAttribute key="numberOfEvaluatedSystemStatesEnabled" value="false"/>
     <intAttribute key="numberOfExactDecimalPlaces" value="1"/>
     <booleanAttribute key="numberOfExactDecimalPlacesEnabled" value="false"/>
-    <booleanAttribute key="optimisationOnly" value="false"/>
+    <booleanAttribute key="optimisationOnly" value="true"/>
     <stringAttribute key="org.palladiosimulator.dataflow.pcm.dsexplore.analysis.definition" value="platform:/resource/InternationalOnlineShop/constraint.DCPDSL"/>
     <mapAttribute key="org.palladiosimulator.dataflow.pcm.dsexplore.analysis.mapping"/>
     <stringAttribute key="outpath" value="org.palladiosimulator.temporary"/>
